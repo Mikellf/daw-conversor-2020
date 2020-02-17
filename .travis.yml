@@ -14,8 +14,8 @@ script:
 
 deploy:
   #provider: heroku
-  #api_key: 
-  #app: daw-conversor-2020
+  #api_key: d56ab021-0e25-49c1-a661-891596fbdbc9
+  #app: daw-conversor-2020-miguel
 
   #provider: script
   #script: docker push mikellf/despliegue

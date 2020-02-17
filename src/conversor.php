@@ -46,6 +46,19 @@ class Conversor
         return $resultadoDolares;
     }
 
+    /**
+     * Doc comment for function sumar.
+     * 
+     * @param $euros operador
+     * 
+     * @return $resultado
+     */
+    function eurosAYenes($euros) 
+    {
+        $resultadoYenes = $euros* 119.05;
+        return $resultadoYenes;
+    }
+
 }
 
 
