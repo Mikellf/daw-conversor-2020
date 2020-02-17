@@ -6,7 +6,7 @@ php:
 before_script:
   - composer self-update
   - composer install --no-interaction
-  #- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
 script:
   - vendor/bin/phpunit 
