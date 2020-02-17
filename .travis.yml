@@ -13,11 +13,11 @@ script:
   #- docker build -t mikellf/despliegue .
 
 deploy:
-  #provider: heroku
-  #api_key: d56ab021-0e25-49c1-a661-891596fbdbc9
-  #app: daw-conversor-2020-miguel
+  provider: heroku
+  api_key: d56ab021-0e25-49c1-a661-891596fbdbc9
+  app: daw-conversor-2020-miguel
 
-  #provider: script
-  #script: docker push mikellf/despliegue
-  #on:
-    #branch: master
+  provider: script
+  script: docker push mikellf/despliegue
+  on:
+    branch: master

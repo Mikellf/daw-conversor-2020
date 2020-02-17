@@ -10,16 +10,15 @@ class ConversorTest extends TestCase {
     {
 
         $conversion = new Conversor();
-        $this->assertEquals($conversion->eurosADolares(10), 10.835);
+        $this->assertEquals($conversor->eurosADolares(1, 1.0835), 1.0835);
     }
 
     public function testEurosAYenes()
     {
 
         $conversion = new Conversor();
-        $this->assertEquals($conversion->eurosAYenes(10), 1190.5);
+        $this->assertEquals($conversor->eurosAYenes(1, 119.05), 119.05);
     }
-
-}
+    }
 
 ?>

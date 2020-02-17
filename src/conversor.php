@@ -32,31 +32,35 @@
  */
 
 class Conversor
-{   private $euros;
+{   public $dolar = 1.0835;
+    public $yen = 119.05;
     /**
      * Doc comment for function sumar.
      * 
-     * @param $euros operador
+     * @param $dolar operador
      * 
-     * @return $resultado
+     * @return $dolar*$euro
      */
-    function eurosADolares($euros) 
+    public function eurosADolares($euro,$dolar)
     {
-        $resultadoDolares = $euros* 1.0835;
-        return $resultadoDolares;
+        $this->euro= $euro;
+        $this->dolar= $dolar;
+        return $dolar * $euro;
     }
+
 
     /**
      * Doc comment for function sumar.
      * 
-     * @param $euros operador
+     * @param $yen operador
      * 
-     * @return $resultado
+     * @return $yen*$euro
      */
-    function eurosAYenes($euros) 
+    public function eurosAYenes($euro,$yen)
     {
-        $resultadoYenes = $euros* 119.05;
-        return $resultadoYenes;
+        $this->euro= $euro;
+        $this->yen= $yen;
+        return $yen * $euro;
     }
 
 }
