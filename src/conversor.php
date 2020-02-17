@@ -32,8 +32,19 @@
  */
 
 class Conversor
-{
-    
+{   private $euros;
+    /**
+     * Doc comment for function sumar.
+     * 
+     * @param $euros operador
+     * 
+     * @return $resultado
+     */
+    function eurosADolares($euros) 
+    {
+        $resultadoDolares = $euros* 1.0835;
+        return $resultadoDolares;
+    }
 
 }
 
