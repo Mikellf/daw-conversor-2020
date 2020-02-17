@@ -6,18 +6,18 @@ php:
 before_script:
   - composer self-update
   - composer install --no-interaction
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  #- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
 script:
   - vendor/bin/phpunit 
-  - docker build -t mikellf/despliegue .
+  #- docker build -t mikellf/despliegue .
 
 deploy:
-  provider: heroku
-  api_key: d56ab021-0e25-49c1-a661-891596fbdbc9
-  app: despliegue-cip
+  #provider: heroku
+  #api_key: 
+  #app: daw-conversor-2020
 
-  provider: script
-  script: docker push mikellf/despliegue
-  on:
-    branch: master
+  #provider: script
+  #script: docker push mikellf/despliegue
+  #on:
+    #branch: master
