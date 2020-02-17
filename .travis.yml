@@ -9,8 +9,8 @@ before_script:
   #- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
 script:
-  - phpunit
-  #- docker build -t mikellf/despliegue .
+  - vendor/bin/phpunit 
+  - docker build -t mikellf/daw-conversor-2020 .
 
 deploy:
   provider: heroku
@@ -18,6 +18,6 @@ deploy:
   app: daw-conversor-2020-miguel
 
   provider: script
-  script: docker push mikellf/despliegue
+  script: docker push mikellf/daw-conversor-2020
   on:
     branch: master
